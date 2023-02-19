@@ -22,9 +22,6 @@ app.get("/", (req, res) => {
 app.use('/' , items)
 
 
-
-
-
 app.listen(5000 ,async()=>{
     const client = new MongoClient(process.env.mongoDB_URI);
         db = client.db()
